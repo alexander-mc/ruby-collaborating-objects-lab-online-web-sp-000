@@ -12,6 +12,7 @@ class MP3Importer
   def files
     files = Dir.glob("#{self.path}/*.mp3")
     files.map{|file| File.basename(file)}
+    binding.pry
   end
   
   def import
